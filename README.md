@@ -1,0 +1,2 @@
+# wifiServerAndWifiClient
+android wifi client 
