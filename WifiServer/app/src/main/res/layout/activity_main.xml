@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycom.wifiserver.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开热点"
+        android:id="@+id/createWifi"
+        android:onClick="createWifi"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createWifi"
+        android:text="关闭热点"
+        android:id="@+id/closeWifi"
+        android:onClick="closeWifi"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="打开TCP服务"
+        android:id="@+id/sendM"
+        android:onClick="openSocket"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closeWifi"
+        android:text="hello"
+        android:id="@+id/name"
+        />
+
+</RelativeLayout>
